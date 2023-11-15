@@ -1,0 +1,50 @@
+.gridjs-tbody tr:hover td {
+    background-color: gainsboro;
+}
+
+.img-size {
+    width: 100%;
+    max-width: 350px;
+}
+
+.sel-size {
+    width: 200px;
+}
+
+.div-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.div-left {
+    width: 400px;
+    float: left;
+}
+
+.div-right {
+    margin-left: 420px;
+}
+
+.left-label {
+    width: 200px;
+    float: left;
+    font-family: Arial;
+}
+
+.middle-label {
+    width: 200px;
+    float: left;
+    font-family: Arial;
+}
+
+.right-label {
+    margin-left: 410px;
+    font-family: Arial;
+}
+h1 {
+    font-family: Arial;
+}
+
+h3 {
+    font-family: Arial;
+}

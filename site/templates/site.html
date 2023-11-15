@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>International Soccer Statistics</title>
+  
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <!-- grid.js CSS-->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css">
+
+</head>
+
+<body>
+    <h1>International Soccer Statistics</h1>
+    <hr>
+    <div class="div-container">
+        <div class="left-label">League:</div>
+        <div class="middle-label">Team:</div>
+        <div class="right-label">Position:</div>
+    </div>
+    <select id="selLeague" class="sel-size" onchange="selLeagueChange(this.value)"></select>
+    <select id="selTeam" class="sel-size" onchange="selTeamChange()"></select>
+    <select id="selPosition" class="sel-size" onchange="selPositionChange()"></select>
+    <p>
+        <hr>
+    </p>
+    <div id="playerStatsGrid"></div>
+    <p>
+        <hr>
+    </p>
+    
+    <div class="div-container">
+        <div class="div-left"><img id="playerPhoto" class="img-size"></div>
+        <div class="div-right">
+            <h3 id="playerNumber"></h3>
+            <h3 id="playerBirthdate"></h3>
+            <h3 id="playerHeight"></h3>
+            <h3 id="playerWeight"></h3>
+            <h3 id="playerNationality"></h3>
+        </div>
+    
+    </div>
+    
+    
+    <!-- D3 JavaScript -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- grid.js JavaScript-->
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/logic.js"></script>
+
+</body>
+
+</html>
